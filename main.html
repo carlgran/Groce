@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    /*background-color:black;*/
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:20%;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:100%;
+    float:left;
+    padding:10px;
+    /*background-image: url('atmarket.jpg');*/
+    color:white;
+}
+#note{
+    float: left;
+    text-align: center
+}
+#store_field{
+    float: right;
+    text-align: center;
+    width: 45%;
+}
+#entrlst{
+    float: left;
+    text-align: center;
+    width:45%;
+}
+#news {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width: 26.5%;
+    float:left;
+    padding:5px;
+}
+#footer {
+    /*background-color:olive;*/
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+textarea {
+    width: 40%;
+    height: 180px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    /*border: 2px solid #cc*/
+    border-style: none;
+    border-radius: 4px;
+    background-color: #f8f8f
+    font-size: 16px;
+    resize: none;
+    background-image: url('sheet.jpg');
+    background-size: cover;
+}
+</style>
+</head>
+<body style="background-image: url('atmarket.jpg');background-size: cover;">
+
+<div id="header">
+<h1>Shoplist</h1>
+</div>
+<br>
+
+<!--<div id="nav">
+<h2>Menu</h2>
+Newport News<br>
+Miami<br>
+Bogota
+</div>
+-->
+<div id="section" >
+
+<div id=entrlst>
+<fieldset>
+<legend>Your List</legend>   
+<form action="getlist.py" method="post">
+<p style="color:white";> Enter list below:</p><br>
+<textarea name="shoplist" rows="10" cols="30">
+</textarea>
+<br><br>
+  <input type="submit" value="Submit" name="quick_list">
+<br><br>
+  <input type="submit" value="Advanced Options" name="detailed_list">
+</form>
+</fieldset>
+</div>
+
+<!--<div id="note">-->
+<div id="store_field">
+<fieldset style=" width: 90%;">
+<legend>Store entries</legend>
+<form  action="data_hndlr.py" method="post">
+  Store ID:<br>
+  <input type="text" name="store_name" ><br>
+  Store Password:<br>
+  <input type="text" name="password" ><br> 
+  Product:<br>
+  <input type="text" name="product" ><br>
+  Quantity:<br>
+  <input type="text" name="quantity" ><br>
+  Price:<br>
+  <input type="text" name="price" ><br><br>
+  <input type="submit" value="Submit">
+</form>
+</fieldset>
+</div>
+
+</div>
+
+
+<!--<div id="news">
+<h2>News and Updates</h2><br>
+<h3>Menu of the day</h3>
+<ul style="list-style-type:disc">
+  <li>Tomato soup</li>
+  <li>Eggplant parmiggiana</li>
+  <li>Goat cheese salad</li>
+</ul></div>-->
+
+<div id="footer">
+Copyright
+</div>
+
+</body>
+</html>
+
