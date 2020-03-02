@@ -1,4 +1,4 @@
-#!C:\Python35-32\python.exe
+#!/Users/carlosgranados/anaconda3/bin/python
 # Import modules for CGI handling 
 import cgi, cgitb, csv,re
 cgitb.enable()
